@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "component": "bluemap-addon-render-core",
+  "version": "0.1.0-alpha.1",
+  "source_origin": {
+    "repository": "https://github.com/jan-guenter/bluemap-sophisticated-addon",
+    "earliest_matching_history_commit": "8cdb778db3c123aec472404fdafecde28928e4b7",
+    "frozen_release_snapshot": "a75b1d82c3987fa9360a1e8a5910eedf90aca7cb",
+    "license": "MIT"
+  },
+  "deduplication_evidence": {
+    "group": "java-file-exact-7c6806712bf5d745",
+    "token_sha256": "7c6806712bf5d745b47a04406c32fceabdf110e732ff23e553f0f215a8636880",
+    "repeated_lines": 258
+  },
+  "bluemap_abi": {
+    "version": "5.22",
+    "backport_commit": "9be321df995a1103808621d529eb72773e719d4d",
+    "compatibility_commit": "7e07f4e74ec1e92a6ead9aa1e66054af3e133aac",
+    "api_commit": "285c9a60eff3ac2b0cab308ce1058d1565be0971"
+  },
+  "matching_consumers": [
+    {
+      "addon": "chipped",
+      "commit": "c474a82b6bfd1b4173d119cb1e053a5458167e4b",
+      "sha256": "d886f34f36f319931fce22b1e8955d1005955ecfdb54556ecb9429e6bd7186be",
+      "spdx": "MIT"
+    },
+    {
+      "addon": "cobblefurnies",
+      "commit": "eea5407dbbd162cbe4dd8fc5bc247f6617cf5d98",
+      "sha256": "698d4c6e5b1aa22e06ef3c70ef1bf41c6af35f2ee408c10dc3350f89e1eaca44",
+      "spdx": "MIT"
+    },
+    {
+      "addon": "integrated-dynamics",
+      "commit": "f6f0d7c89563aa63f27970c898fda4cc720cc32f",
+      "sha256": "c33de8ee9719e74d357a4237724dab6cb2392ea4c658b01423d8ec51d7bee37f",
+      "spdx": "MIT"
+    },
+    {
+      "addon": "laserio",
+      "commit": "2148a344b1ae78e77b95aa2baa51efe46c1357e8",
+      "sha256": "6e7850df48d8f0293db505d6c77f63dc73cf83982adbe02920248f612d213541",
+      "spdx": "MIT"
+    },
+    {
+      "addon": "pipez",
+      "commit": "fa3e773a7d1b7e9af52277bf104e70f704b0bb2a",
+      "sha256": "0b096eb4e1a1bba48e90402d2a9bd0f3cc2069c8842aff16dfdfee84035e0adf",
+      "spdx": "MIT"
+    },
+    {
+      "addon": "powah",
+      "commit": "7ad05e80ed70152fcf48c92c6c32de3f6d815667",
+      "sha256": "35a9c37fa436dabfa30c2d5a02bbd8fce172206da53ea7c95c10ddf191571534",
+      "spdx": "LGPL-3.0-only"
+    },
+    {
+      "addon": "sophisticated",
+      "commit": "a75b1d82c3987fa9360a1e8a5910eedf90aca7cb",
+      "sha256": "5d6a6be62bb36827cb9d074423b3c9aac8601bfb2960ff0f59dc359dcd71b5f2",
+      "spdx": "MIT"
+    }
+  ],
+  "transformation": "Change the canonical package and make the class, sample method, and nested Sample record public. Executable behavior is unchanged.",
+  "sources": [
+    {
+      "origin_path": "src/main/java/io/github/janguenter/bluemap/sophisticated/adapter/bluemap522/FaceLighting.java",
+      "production_path": "src/main/java/io/github/janguenter/bluemap/addon/render/core/adapter/bluemap522/FaceLighting.java",
+      "oracle_path": "src/origin/java/io/github/janguenter/bluemap/sophisticated/adapter/bluemap522/FaceLighting.java",
+      "origin_sha256": "5d6a6be62bb36827cb9d074423b3c9aac8601bfb2960ff0f59dc359dcd71b5f2",
+      "normalizations": [
+        {
+          "from": "package io.github.janguenter.bluemap.addon.render.core.adapter.bluemap522;",
+          "to": "package io.github.janguenter.bluemap.sophisticated.adapter.bluemap522;"
+        },
+        {
+          "from": "public final class FaceLighting",
+          "to": "final class FaceLighting"
+        },
+        {
+          "from": "public static Sample sample(",
+          "to": "static Sample sample("
+        },
+        {
+          "from": "public record Sample(int sunlight, int blocklight)",
+          "to": "record Sample(int sunlight, int blocklight)"
+        }
+      ]
+    }
+  ]
+}
