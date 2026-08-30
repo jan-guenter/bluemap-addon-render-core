@@ -1,13 +1,14 @@
 # BlueMap Add-on Render Core
 
 This Java 21 source module begins the portfolio's narrow shared rendering
-core with one proven API: transformed-face light sampling for BlueMap 5.22.
+core with one proven API: transformed-face light sampling for the exact
+BlueMap 5.23 feature backport.
 `FaceLighting.sample` rotates the requested face through the model variant,
 samples that adjacent block, and returns the maximum sunlight and block light
 from the host and exposed neighbor while respecting the model's emission.
 
 The API is in
-`io.github.janguenter.bluemap.addon.render.core.adapter.bluemap522`. It is
+`io.github.janguenter.bluemap.addon.render.core.adapter.bluemap523`. It is
 exactly the behavior previously repeated in Chipped, CobbleFurnies,
 Integrated Dynamics, LaserIO, Pipez, Powah, and Sophisticated.
 
@@ -32,22 +33,21 @@ audit must admit exactly one copy of `FaceLighting` and
 `FaceLighting$Sample`, reject the legacy local class, and reject a nested
 module JAR.
 
-## Exact ABI
+## Exact target
 
-The version-specific adapter is compiled against the exact BlueMap 5.22
-backport commit `9be321df995a1103808621d529eb72773e719d4d` and BlueMapAPI
-commit `285c9a60eff3ac2b0cab308ce1058d1565be0971`. The Maven POM and
-Gradle module metadata intentionally publish no production dependency because
-the standalone JAR is a review artifact, not an installed library.
+The version-specific adapter compiles only against BlueMap feature-backport
+commit `7e07f4e74ec1e92a6ead9aa1e66054af3e133aac` and BlueMapAPI commit
+`285c9a60eff3ac2b0cab308ce1058d1565be0971`. The exact runtime version string
+at that commit is `5.22-feature.backport-5.23-stateless-java-web-server-46`.
+That string is runtime identity, not support for the former 5.22 backport.
 
-The same focused suite also compiles against the current 5.23 backport feature
-commit `7e07f4e74ec1e92a6ead9aa1e66054af3e133aac`. That is a bounded
-compatibility check, not a claim that other BlueMap internal APIs are stable.
+The Maven POM and Gradle module metadata publish no production dependency
+because the standalone JAR is a review artifact, not an installed library.
 
 ## Build
 
 Use Java 21, Gradle 9.4.0 or 9.6.1, and a clean recursive checkout of that
-exact BlueMap backport:
+exact feature target:
 
 ```bash
 gradle --no-daemon \
