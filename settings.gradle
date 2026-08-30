@@ -30,7 +30,7 @@ def gitOutput = { File repository, String... arguments ->
 }
 
 def requireClean = { File repository, String label ->
-    def status = gitOutput(repository, 'status', '--porcelain=v1', '--untracked-files=no')
+    def status = gitOutput(repository, 'status', '--porcelain=v1', '--untracked-files=all')
     if (!status.isEmpty()) {
         throw new GradleException("Refusing dirty ${label} checkout: ${status}")
     }
