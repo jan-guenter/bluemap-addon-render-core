@@ -16,7 +16,7 @@ CobbleFurnies remains the initial untouched control.
 | CobbleFurnies control | `5f8aaf610b9cbc767ddadc94a22402f033999e5b` | `eea5407dbbd162cbe4dd8fc5bc247f6617cf5d98` |
 
 All profiles target ATMons 1.2.0, Minecraft 1.21.1, NeoForge 21.1.248,
-Java 21, and the exact BlueMap 5.22 ABI recorded in `README.md`.
+Java 21, and the exact BlueMap 5.23 feature target recorded in `README.md`.
 
 ## Consumer acceptance
 

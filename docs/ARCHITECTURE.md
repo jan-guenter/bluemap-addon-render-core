@@ -9,15 +9,15 @@ review and distribution; server administrators do not install the JAR.
 
 ## Version-specific lighting contract
 
-`FaceLighting.sample` accepts BlueMap 5.22 `BlockNeighborhood`, `Direction`,
-and `Variant` objects plus an emission floor. It transforms the face normal
-through the variant matrix, rounds the resulting axial offset, samples that
-neighbor, and returns immutable `sunlight` and `blocklight` maxima.
+`FaceLighting.sample` accepts the exact BlueMap 5.23 feature target's
+`BlockNeighborhood`, `Direction`, and `Variant` objects plus an emission
+floor. It transforms the face normal through the variant matrix, rounds the
+resulting axial offset, samples that neighbor, and returns immutable
+`sunlight` and `blocklight` maxima.
 
-The public API is deliberately under `adapter.bluemap522`. These are internal
-BlueMap core types rather than a stable public API, so a later BlueMap line
-gets another adapter and compatibility gate instead of silently widening this
-one.
+The public API is deliberately under `adapter.bluemap523`. These are internal
+BlueMap core types rather than a stable public API. The build admits only the
+exact tested BlueMap and BlueMapAPI commits.
 
 ## Boundaries
 

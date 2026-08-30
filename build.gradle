@@ -180,8 +180,8 @@ tasks.register('verifyRenderCoreJar') {
                 'META-INF/NOTICE-bluemap-addon-render-core.md',
                 'META-INF/THIRD_PARTY-bluemap-addon-render-core.md',
                 'META-INF/bluemap-addon-render-core/origins.json',
-                'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap522/FaceLighting.class',
-                'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap522/FaceLighting$Sample.class'
+                'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap523/FaceLighting.class',
+                'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap523/FaceLighting$Sample.class'
         ] as Set
         def zip = new java.util.zip.ZipFile(inputs.files.singleFile)
         try {
@@ -206,7 +206,7 @@ tasks.register('verifyRenderCoreSourcesJar') {
                 'META-INF/NOTICE-bluemap-addon-render-core.md',
                 'META-INF/THIRD_PARTY-bluemap-addon-render-core.md',
                 'META-INF/bluemap-addon-render-core/origins.json',
-                'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap522/FaceLighting.java'
+                'io/github/janguenter/bluemap/addon/render/core/adapter/bluemap523/FaceLighting.java'
         ] as Set
         def zip = new java.util.zip.ZipFile(inputs.files.singleFile)
         try {

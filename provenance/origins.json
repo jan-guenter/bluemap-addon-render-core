@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "component": "bluemap-addon-render-core",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "source_origin": {
     "repository": "https://github.com/jan-guenter/bluemap-sophisticated-addon",
     "earliest_matching_history_commit": "8cdb778db3c123aec472404fdafecde28928e4b7",
@@ -14,9 +14,9 @@
     "repeated_lines": 258
   },
   "bluemap_abi": {
-    "version": "5.22",
-    "backport_commit": "9be321df995a1103808621d529eb72773e719d4d",
-    "compatibility_commit": "7e07f4e74ec1e92a6ead9aa1e66054af3e133aac",
+    "target": "BlueMap 5.23 feature backport",
+    "runtime_version": "5.22-feature.backport-5.23-stateless-java-web-server-46",
+    "backport_commit": "7e07f4e74ec1e92a6ead9aa1e66054af3e133aac",
     "api_commit": "285c9a60eff3ac2b0cab308ce1058d1565be0971"
   },
   "matching_consumers": [
@@ -67,12 +67,12 @@
   "sources": [
     {
       "origin_path": "src/main/java/io/github/janguenter/bluemap/sophisticated/adapter/bluemap522/FaceLighting.java",
-      "production_path": "src/main/java/io/github/janguenter/bluemap/addon/render/core/adapter/bluemap522/FaceLighting.java",
+      "production_path": "src/main/java/io/github/janguenter/bluemap/addon/render/core/adapter/bluemap523/FaceLighting.java",
       "oracle_path": "src/origin/java/io/github/janguenter/bluemap/sophisticated/adapter/bluemap522/FaceLighting.java",
       "origin_sha256": "5d6a6be62bb36827cb9d074423b3c9aac8601bfb2960ff0f59dc359dcd71b5f2",
       "normalizations": [
         {
-          "from": "package io.github.janguenter.bluemap.addon.render.core.adapter.bluemap522;",
+          "from": "package io.github.janguenter.bluemap.addon.render.core.adapter.bluemap523;",
           "to": "package io.github.janguenter.bluemap.sophisticated.adapter.bluemap522;"
         },
         {
