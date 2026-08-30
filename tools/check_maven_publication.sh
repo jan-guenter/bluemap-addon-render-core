@@ -17,7 +17,7 @@ release_directory="$3"
 : "${GITHUB_TOKEN:?GITHUB_TOKEN is required}"
 
 artifact="bluemap-addon-render-core"
-base_url="https://maven.pkg.github.com/jan-guenter/bluemap-addon-render-core/io/github/janguenter/${artifact}/${version}"
+base_url="https://maven.pkg.github.com/jan-guenter/bluemap-addon-render-core/io/github/janguenter/bluemap/${artifact}/${version}"
 temporary_directory="$(mktemp -d)"
 trap 'rm -rf "${temporary_directory}"' EXIT
 
